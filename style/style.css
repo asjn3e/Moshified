@@ -142,4 +142,20 @@ a{
         padding-left: 0; 
     }
 }
- 
+
+/* Icons */
+
+.icon--primary{
+    fill:var(--color-primary);
+    width:40px;
+    height:40px;
+}
+.icon-container{
+    background-color: #f3f9f9;
+    width:64px;
+    height: 64px;
+    border-radius: 100%;
+    display: inline-flex;
+    justify-content:center;
+    align-items:center;
+}
