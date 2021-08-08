@@ -242,7 +242,7 @@ a {
 }
 
 .btn--secondary {
-    background-color: var(--color-primary);
+    background-color: var(--color-secondary);
     color: #fff;
 }
 
@@ -514,5 +514,55 @@ a {
     }
     .testimonial .quote{
         margin-left:3rem;
+    }
+} 
+
+/* callOuts */
+
+.callout{
+   padding: 4rem;
+   border-radius: 5px;
+}
+.callout--primary{
+    background-color: var(--color-primary);
+}
+
+.callout__content{
+    color: white;
+    text-align: center;
+    
+}
+.callout__content > h2{
+    color: white;
+    font-weight: 700;
+    font-size: 4rem;
+}
+.callout__content > p{
+    color: white;
+    font-weight: 500;
+    font-size: 2.4rem;
+}
+
+
+.callout__btn{
+    justify-self: center;
+    align-self: center;
+    width: 60%;
+    margin:3rem 0;
+}
+
+@media screen and (min-width:768px) {
+    .callout .grid--1x2{
+        grid-template-columns: 1fr 0.3fr;
+        grid-gap: 5rem;
+    }
+    .callout__content{
+        color: white;
+        text-align: left;
+        
+    }
+    .callout__btn{
+       width: 100%;
+      
     }
 }
