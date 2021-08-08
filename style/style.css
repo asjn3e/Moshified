@@ -383,3 +383,16 @@ a {
     }
 
 }
+
+/* media */
+
+.media{
+    display: flex;
+}
+.media__body{
+    margin: 0 2rem;
+}
+
+.media__image{
+    margin-top: 1rem;
+}
