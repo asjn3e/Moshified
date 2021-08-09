@@ -566,3 +566,32 @@ a {
       
     }
 }
+
+
+/* collapsibles */
+
+.collapsible__heading{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.collapsible__title{
+    color: rgb(216, 49, 49);
+    font-size: 3rem;
+}
+
+.collapsible__icon{
+    transform: rotate(-90deg);
+}
+
+.collapsible__content{
+    display: none;
+}
+
+.collapsible--expanded .collapsible__icon{
+    transform: rotate(0deg);
+}
+
+.collapsible--expanded .collapsible__content{
+    display: block;
+}
