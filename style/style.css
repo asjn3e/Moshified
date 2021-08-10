@@ -30,6 +30,7 @@ html {
 }
 
 body {
+  
     font-family: 'Inter', sans-serif;
     color: var(--color-body);
     font-size: 2.4rem;
@@ -47,10 +48,11 @@ h2,
 h3 {
     color: var(--color-headings);
     margin-bottom: 1rem;
+    line-height: 1.1;
 }
 
 h1 {
-    font-size: 7rem;
+    font-size: 6rem;
 }
 
 h2 {
@@ -601,4 +603,45 @@ a {
     max-height: 100vh;
     opacity: 1;
     transition: all .5s;
+}
+
+
+/* blocks */
+.container{
+    max-width: 1140px;
+    margin: auto;
+}
+.block{
+    --vertical-padding:6rem;
+    padding: var(--vertical-padding) 2rem;
+   
+}
+
+.block__heading{
+    text-align: center;
+}
+
+
+.block--cliped--right{
+    clip-path: polygon(100% 0%, 0 0, 0 80%, 100% 100%);
+    padding-bottom: calc(var(--vertical-padding) + 4rem);
+}
+
+.block--cliped--left{
+    clip-path: polygon(0% 0%, 100% 0, 100% 80%, 0% 100%);
+    padding-bottom: calc(var(--vertical-padding) + 4rem);
+}
+
+.block__heading > h1{
+    margin-bottom: 0;
+    
+   
+}
+
+.block--dark{
+    background-color: #000;
+}
+
+.block--dark .block__heading > h1{
+    color: #fff;
 }
