@@ -645,3 +645,85 @@ a {
 .block--dark .block__heading > h1{
     color: #fff;
 }
+
+/* nav */
+
+.nav{
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding:2rem  3rem;
+    align-items: center;
+}
+.nav__logo{
+    transform: translatex(-20px);
+}
+.nav__toggler{
+    width: 40px;
+      
+    transition: all .5s;
+    cursor: pointer;
+}
+.nav__content{
+    width: 100%;
+   
+}
+.nav__list > a{
+    color: #c1c0c7;
+    transition: color .3s;
+}
+.nav__list > a:hover{
+    color: #fff;
+    
+}
+.nav__item{
+    padding:1rem;
+    
+}
+.nav__item--borderd{
+    border-bottom: 1px solid #222;
+   
+}
+
+.collapsible--expanded .nav__content{
+    margin-top: 3rem;
+}
+
+
+.collapsible--expanded .nav__toggler{
+    transform: rotate(90deg);
+    box-shadow: none;
+
+}
+
+@media screen and (min-width:768px) {
+   .nav{
+       font-size: 1.6rem;
+       justify-content: space-around;
+   }
+    .nav__toggler{
+        display: none;
+    }
+    .nav__content{
+        width: auto;
+       
+    }
+    .nav .collapsible__content {
+        max-height: 100vh;
+        opacity: 1;
+    }
+    .collapsible--expanded .nav__content{
+        margin-top: 0;
+    }
+    
+    .nav__list{
+        display: flex;
+    }
+    .nav__item{
+        margin-right: 3rem;
+    }
+    .nav__item--borderd{
+        border:none;
+    }
+}
