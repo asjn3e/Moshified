@@ -868,6 +868,7 @@ a {
     grid-template-columns: repeat(3 , 1fr);
     grid-template-rows: repeat(2 , 1fr);
     justify-items: center;
+    grid-row-gap: 1rem;
     
     font-weight: 700;
 }
@@ -946,13 +947,54 @@ a {
 
 @media screen and (min-width:768px) {
     .domain-block__prices{
-        max-width: 800px;
+        max-width: 900px;
         margin: 0 auto;
         font-size: 1.5rem;
         grid-template-columns: repeat(auto-fit , minmax(100px,1fr))
     }
-    .domain-block .btn{
+    .domain-block .input-group{
         max-width: 670px;
-        margin: auto;
+        margin:4rem auto;
+    }
+    
+    .domain-block__prices{
+        font-size: 1.7rem;
+    }
+
+    .domain-block .block__heading >h2{
+        
+        font-size:4rem;
+        line-height: 5.5rem;
+        
+    }
+    .domain-block .block__heading >p{
+        
+        font-size:2rem;
+        line-height: 3rem;
+        
+    }
+    .domain-block .input{
+        padding: 1.5rem 3.5rem;
+        flex-grow: 1;
+        
+    }
+    .domain-block .btn{
+        padding: 2rem;
+        font-size: 2rem;
+       
+        
+    }
+    ::placeholder{
+        font-size: 2rem;
+    }
+    
+
+    .domain-block__prices .badge{
+        font-size: 2rem;
+    }
+}
+@media screen and (min-width:1024px) {
+    .domain-block__prices{
+        font-size: 2rem;
     }
 }
