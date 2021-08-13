@@ -613,7 +613,7 @@ a {
 }
 .block{
     --vertical-padding:6rem;
-    padding: var(--vertical-padding) 2rem;
+    padding: var(--vertical-padding) 1rem;
    
 }
 
@@ -748,11 +748,29 @@ a {
     width:100%;
     
 }
+@media screen and (min-width:320px) {
+    .hero .block__heading > h1{
+        font-size: 4.1rem;
+    }
+}
+@media screen and (min-width:360px) {
+    .hero .block__heading > h1{
+        font-size: 4.7rem;
+    }
+}
+@media screen and (min-width:375px) {
+    .hero .block__heading > h1{
+        font-size: 4.9rem;
+    }
+}
+
 
 @media screen and (min-width:768px) {
     .hero{
         clip-path: polygon(0% 0%, 100% 0, 100% 80%, 0% 100%);
     }
+    
+    
     .hero__image{
        position: relative;
         height: 60vh;
@@ -767,5 +785,17 @@ a {
     .hero .block__heading{
         text-align: left;
         margin-top: 10rem;
+    }
+    .hero__btn{
+        width: 40%;
+    }
+
+    .hero .block__heading >h1{
+        font-size: 5rem;
+    }
+}
+@media screen and (min-width:1024px) {
+    .hero .block__heading >h1{
+        font-size: 6rem;
     }
 }
