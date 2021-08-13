@@ -229,6 +229,12 @@ a {
     text-align: center;
 }
 
+.btn .icon{
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1rem;
+    vertical-align: middle;
+}
 .btn-block{
     width: 100%;
     
@@ -613,7 +619,7 @@ a {
 }
 .block{
     --vertical-padding:6rem;
-    padding: var(--vertical-padding) 1rem;
+    padding: var(--vertical-padding) 2rem;
    
 }
 
@@ -753,17 +759,20 @@ a {
 }
 @media screen and (min-width:320px) {
     .hero .block__heading > h1{
-        font-size: 4.1rem;
+        font-size: 3.8rem;
+    }
+    .hero__description{
+        font-size: 2rem;
     }
 }
 @media screen and (min-width:360px) {
     .hero .block__heading > h1{
-        font-size: 4.7rem;
+        font-size: 4.4rem;
     }
 }
 @media screen and (min-width:375px) {
     .hero .block__heading > h1{
-        font-size: 4.9rem;
+        font-size: 4.6rem;
     }
 }
 
@@ -829,5 +838,40 @@ a {
 
     .hero .block__heading >h1{
         font-size: 7rem;
+    }
+}
+
+
+/* domain block */
+
+.domain-block .block__heading >p{
+    color: #574e73;
+    font-weight: 400;
+    font-size:2.2rem;
+    line-height: 3.4rem;
+    margin-top: 2rem;
+}
+.domain-block .input-group{
+    border: none;
+    box-shadow:0  15px 30px  rgba(9,58,88,.15) ;
+    margin: 4rem auto;
+    max-width: 670px;
+   
+}
+
+.domain-block__prices{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    grid-template-rows: repeat(2 , 1fr);
+    justify-items: center;
+    font-size: 2rem;
+    font-weight: 700;
+}
+@media screen and (min-width:768px) {
+    .domain-block__prices{
+        max-width: 800px;
+        margin: 0 auto;
+        font-size: 1.5rem;
+        grid-template-columns: repeat(auto-fit , minmax(100px,1fr))
     }
 }
