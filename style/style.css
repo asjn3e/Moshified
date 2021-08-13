@@ -731,6 +731,9 @@ a {
 /* hero */
 .hero{
     clip-path: polygon(0% 0%, 100% 0, 100% 90%, 0% 100%);
+    background-image: url(../images/blue-dots.png);
+    background-repeat: repeat;
+    background-size: 700px;
 }
 .hero__description{
     color: #b9c3cf;
@@ -768,6 +771,7 @@ a {
 @media screen and (min-width:768px) {
     .hero{
         clip-path: polygon(0% 0%, 100% 0, 100% 80%, 0% 100%);
+        background-size: 600px;
     }
     
     
@@ -783,7 +787,7 @@ a {
                  
     }
     .hero .block__heading{
-        text-align: left;
+        text-align: center;
         margin-top: 10rem;
     }
     .hero__btn{
@@ -793,9 +797,16 @@ a {
     .hero .block__heading >h1{
         font-size: 5rem;
     }
+    .hero .grid{
+        grid-gap: 1rem;
+    }
 }
 @media screen and (min-width:1024px) {
+    .hero{
+        clip-path: polygon(0% 0%, 100% 0, 100% 80%, 0% 100%);
+        background-size: 900px;
+    }
     .hero .block__heading >h1{
-        font-size: 6rem;
+        font-size: 7rem;
     }
 }
