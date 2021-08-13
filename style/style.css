@@ -777,13 +777,12 @@ a {
     
     .hero__image{
        position: relative;
-        height: 60vh;
+        height: 50vh;
         margin-top: 0;
     }
     .hero__pic{
         width:100%;
         position: absolute;
-        top:-5rem;
                  
     }
     .hero .block__heading{
@@ -791,7 +790,7 @@ a {
         margin-top: 10rem;
     }
     .hero__btn{
-        width: 40%;
+        width: 50%;
     }
 
     .hero .block__heading >h1{
@@ -803,9 +802,31 @@ a {
 }
 @media screen and (min-width:1024px) {
     .hero{
-        clip-path: polygon(0% 0%, 100% 0, 100% 80%, 0% 100%);
+        clip-path: polygon(0% 0%, 100% 0, 100% 85%, 0% 100%);
         background-size: 900px;
     }
+
+     
+    .hero__image{
+        position: relative;
+         height: 60vh;
+         margin-top: 0;
+     }
+     .hero__pic{
+         width:100%;
+         position: absolute;
+         top:-5rem;
+                  
+     }
+     .hero .block__heading{
+         text-align: center;
+         margin-top: 10rem;
+     }
+     .hero__btn{
+         width: 40%;
+     }
+ 
+
     .hero .block__heading >h1{
         font-size: 7rem;
     }
