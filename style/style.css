@@ -843,6 +843,9 @@ a {
 
 
 /* domain block */
+.domain-block{
+   
+}
 
 .domain-block .block__heading >p{
     color: #574e73;
@@ -854,24 +857,102 @@ a {
 .domain-block .input-group{
     border: none;
     box-shadow:0  15px 30px  rgba(9,58,88,.15) ;
-    margin: 4rem auto;
-    max-width: 670px;
+    margin: 4rem 0;
+    width: 100%;
    
 }
 
 .domain-block__prices{
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(3 , 1fr);
     grid-template-rows: repeat(2 , 1fr);
     justify-items: center;
-    font-size: 2rem;
+    
     font-weight: 700;
 }
+@media screen and (min-width:320px) {
+    .domain-block .block__heading >h2{
+        
+        font-size:2.7rem;
+        line-height: 3.5rem;
+        
+    }
+    .domain-block .block__heading >p{
+        
+        font-size:1.4rem;
+        line-height: 3rem;
+        
+    }
+    .domain-block .input{
+        padding: 1rem;
+        width: 65%;
+        
+    }
+    .domain-block .btn{
+        padding: 1rem;
+        font-size: 1.1rem;
+        width: 35%;
+        
+    }
+    ::placeholder{
+        font-size: 1.1rem;
+    }
+    .domain-block__prices{
+        font-size: 1.3rem;
+    }
+
+    .domain-block__prices .badge{
+        font-size: 1.6rem;
+    }
+}
+@media screen and (min-width:360px) {
+    .domain-block .block__heading >h2{
+        
+        font-size:3rem;
+        line-height: 4rem;
+        
+    }
+    .domain-block .block__heading >p{
+        
+        font-size:1.7rem;
+        line-height: 2.7rem;
+        
+    }
+    .domain-block .input{
+        padding: 1rem;
+        width: 65%;
+        
+    }
+    .domain-block .btn{
+        padding: 1rem;
+        font-size: 1.3rem;
+        width: 35%;
+        
+    }
+    ::placeholder{
+        font-size: 1.3rem;
+    }
+    .domain-block__prices{
+        font-size: 1.3rem;
+    }
+
+    .domain-block__prices .badge{
+        font-size: 2rem;
+    }
+}
+
+   
+
 @media screen and (min-width:768px) {
     .domain-block__prices{
         max-width: 800px;
         margin: 0 auto;
         font-size: 1.5rem;
         grid-template-columns: repeat(auto-fit , minmax(100px,1fr))
+    }
+    .domain-block .btn{
+        max-width: 670px;
+        margin: auto;
     }
 }
