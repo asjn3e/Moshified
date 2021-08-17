@@ -379,7 +379,9 @@ a {
 
 .plan{
     position: relative;
+    transition: transform .2s ease-out;
 }
+
 
 .plan--popular .card__header::before{
     content: url(../images/popular.svg);
@@ -387,7 +389,15 @@ a {
     display: inline-block;
     position: absolute;
     top: -5px;
-    right: 5%;
+    right: 5%;    
+}
+@media screen and (min-width:768px) {
+    .plan:hover{
+        transform: scale(1.05);
+    }
+    .plan--popular:hover{
+        transform: scale(1.15);
+    }
 }
 @media screen and (min-width:1024px){
     .plan__name{
@@ -402,7 +412,11 @@ a {
     .plan__description{
         font-size:1.7rem;
     }
+    .plan--popular{
+        transform: scale(1.1);
+    }
 
+    
 }
 
 /* media */
@@ -472,7 +486,7 @@ a {
         grid-template-columns: 1fr 1fr;
     }
     .grid--1x3{
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr ;
     }
 }
 
@@ -844,7 +858,11 @@ a {
 
 /* domain block */
 .domain-block{
+   background-image: url(../images/New\ Project-phone.png);
+   background-position:center ;
+   background-size:500px;
    
+  
 }
 
 .domain-block .block__heading >p{
@@ -873,6 +891,7 @@ a {
     
     font-weight: 700;
 }
+
 @media screen and (min-width:320px) {
     .domain-block .block__heading >h2{
         
@@ -905,7 +924,8 @@ a {
     }
 
     .domain-block__prices .badge{
-        font-size: 1.6rem;
+        font-size: 1.4rem;
+        padding:.5rem 1.5rem ;
     }
 }
 @media screen and (min-width:360px) {
@@ -940,7 +960,8 @@ a {
     }
 
     .domain-block__prices .badge{
-        font-size: 2rem;
+        font-size: 1.6rem;
+        padding: .5rem 1.5rem;
     }
 }
 
@@ -991,11 +1012,36 @@ a {
     
 
     .domain-block__prices .badge{
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
 }
 @media screen and (min-width:1024px) {
+    .domain-block{
+        background-image: url(../images/blue-lights.png);
+        background-position: center;
+        background-size:2000px;
+       
+     }
     .domain-block__prices{
         font-size: 2rem;
     }
+}
+.plans{
+    margin-top: 3rem;
+}
+.plans .grid{
+    justify-items: center;
+    grid-gap: 6rem 4rem;
+    
+}
+
+.plans .plan{
+    
+    max-width: 500px;
+}
+@media screen and (min-width:1024px){
+    .plans .plan{
+        width:95%;
+        
+    } 
 }
