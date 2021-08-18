@@ -545,7 +545,7 @@ a {
 
 .callout{
    padding:1rem;
-   border-radius: 20px / 30px;
+   border-radius: 15px / 40px;
    position: absolute;
    
    margin: auto;
@@ -793,7 +793,7 @@ a {
     width: 80%;
 }
 .hero__image{
-    margin-top: 3rem;
+    margin-top: 0rem;
 }
 .hero__pic{
     width:100%;
