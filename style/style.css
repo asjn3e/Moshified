@@ -544,8 +544,14 @@ a {
 /* callOuts */
 
 .callout{
-   padding: 4rem;
-   border-radius: 5px;
+   padding:1rem;
+   border-radius: 20px / 30px;
+   position: absolute;
+   
+   margin: auto;
+   top: -150px;
+   right: 15px;
+   left: 15px;
 }
 .callout--primary{
     background-color: var(--color-primary);
@@ -559,23 +565,43 @@ a {
 .callout__content > h2{
     color: white;
     font-weight: 700;
-    font-size: 4rem;
+    font-size: 2.8rem;
+    margin: 2rem;
 }
 .callout__content > p{
     color: white;
     font-weight: 500;
-    font-size: 2.4rem;
+    font-size: 1.8rem;
+    line-height: 3rem;
 }
 
 
 .callout__btn{
     justify-self: center;
     align-self: center;
-    width: 60%;
-    margin:3rem 0;
+    width: 75%;
+    margin:2rem 0;
 }
 
 @media screen and (min-width:768px) {
+    .callout{
+    padding:4rem;
+    max-width: 980px;
+    top: -100px;
+    
+    }
+    .callout__content > h2{
+        color: white;
+        font-weight: 700;
+        font-size: 4rem;
+        margin: 1rem 0;
+    }
+    .callout__content > p{
+        color: white;
+        font-weight: 500;
+        font-size: 1.8rem;
+        line-height: 2rem;
+    }
     .callout .grid--1x2{
         grid-template-columns: 1fr 0.3fr;
         grid-gap: 5rem;
@@ -1282,7 +1308,9 @@ a {
  .footer{
      background-color: #232323;
      padding: 2rem;
-     padding-top: 15rem;
+     padding-top: 20rem;
+     margin-top: 20rem;
+     position: relative;
  }
  .footer .container{
      margin: 0;
@@ -1293,7 +1321,7 @@ a {
  .footer .collapsible__heading{
      align-items: center;
  }
- .footer h2{
+ .footer .collapsible__title {
      text-transform: uppercase;
      color: white;
      font-size: 3rem;
@@ -1330,7 +1358,20 @@ a {
  .footer__copy-right > p{
     font-size:2.1rem;
 }
+@media  screen and (min-width:320px) and (max-width:375px) {
+    .footer{
+        background-color: #232323;
+        padding: 2rem;
+        padding-top: 23rem;
+        margin-top: 20rem;
+        position: relative;
+    }
+}
 @media screen and (min-width:768px) {
+    .footer{
+        margin-top:15rem ;
+        padding-top: 15rem;
+    }
     .footer .container{
         grid-template-columns: repeat(5 , 1fr);
         margin: auto;
@@ -1339,7 +1380,7 @@ a {
     .footer .icon-container ,.footer .icon{
         display: none;
     }
-    .footer h2{
+    .footer .collapsible__title {
         font-size: 2rem;
         margin-bottom: 2rem;
     }
@@ -1369,6 +1410,6 @@ a {
     }
     .footer__copy-right > p{
         font-size:1.5rem;
-        margin-top: 1.5rem;
+        
     }
 }
