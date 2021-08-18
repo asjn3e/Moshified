@@ -502,7 +502,7 @@ a {
 /* testimonials */
 
 .testimonial{
-    padding: 3rem;
+     
 }
 .testimonial__image{
     width: 80%;
@@ -526,7 +526,9 @@ a {
 .testimonial .quote{
     margin-top: 1rem;
 }
-
+.testimonial .quote__text{
+    text-align: center;
+}
 
 @media screen and (min-width:758px) {
     .testimonial .quote ,
@@ -1026,6 +1028,7 @@ a {
         font-size: 2rem;
     }
 }
+/* plans */
 .plans{
     margin-top: 3rem;
 }
@@ -1041,7 +1044,7 @@ a {
 }
 @media screen and (min-width:1024px){
     .plans .plan{
-        width:95%;
+        width:93%;
         
     } 
 }
@@ -1125,7 +1128,7 @@ a {
 }
 
 .control-panel__grid .media__part{
-    margin-top: 2rem;
+    margin-top: 4rem;
 }
 .control-panel__grid .media__part .media{
     margin-bottom: 4rem;
@@ -1160,7 +1163,7 @@ a {
  }
 @media screen and (min-width:360px) {
     .control-panel h2 {
-        font-size: 2.3rem;
+        font-size: 2.7rem;
     }
     .media__part .media .media__title{
         font-size: 2rem;
@@ -1174,7 +1177,7 @@ a {
         background-image: url(../images/blue-dots.png);
         background-repeat: repeat;
         background-size: 700px;
-        clip-path: polygon(100% 0%, 0 0, 0 80%, 100% 100%);
+        clip-path: polygon(100% 0%, 0 0, 0 85%, 100% 100%);
 
      }
      .panel__image{
@@ -1196,6 +1199,80 @@ a {
         background-image: url(../images/blue-dots.png);
         background-repeat: repeat;
         background-size: 900px;
-        clip-path: polygon(100% 0%, 0 0, 0 85%, 100% 100%);
+        clip-path: polygon(100% 0%, 0 0, 0 90%, 100% 100%);
      }
+ }
+
+ /* testimonials */
+ .testimonial__part .block{
+     padding:3rem 2rem;
+ }
+.testimonial__part .block__heading > h2{
+    font-size: 2.9rem;
+}
+.testimonial__part .block__heading > p{
+    font-size: 1.7rem;
+}
+
+ .testimonial__part .container{
+    max-width: 1100px;
+    margin: 2.7rem;
+    padding: 3rem 2rem 6rem 2rem;
+ }
+
+ .testimonial__part .testimonial__image{
+     max-width: 420px;
+ }
+ .testimonial__part .quote__text{
+     font-size: 1.7rem;
+     line-height: 3rem;
+     padding-bottom: 2rem;
+ }
+ .testimonial__part .media__title{
+    font-size: 1.9rem;
+    
+}
+.testimonial__part .media__description{
+    font-size: 1.8rem;
+    
+}
+@media screen and (min-width:360px) {
+   
+   .testimonial__part .block__heading > p{
+       font-size: 1.8rem;
+   }
+}
+@media screen and (min-width:768px) {
+    .testimonial__part .container{
+        padding:3rem 2rem 3rem 0rem;
+    }
+    .testimonial__part  .quote__text{
+        text-align: left;
+    }
+ }
+
+ @media screen and (min-width:1024px) {
+    .testimonial__part .container{
+        padding:3rem 2rem 3rem 0rem;
+        margin:auto;
+    }
+    .testimonial__part .block__heading > h2{
+        font-size: 4rem;
+    }
+    .testimonial__part .block__heading > p{
+        font-size: 2rem;
+    }
+    .testimonial__part .quote__text{
+        font-size: 2.4rem;
+        line-height: 3rem;
+        padding-bottom: 20rem;
+    }
+    .testimonial__part .media__title{
+       font-size: 2.4rem;
+       
+   }
+   .testimonial__part .media__description{
+       font-size: 2rem;
+       
+   }
  }
