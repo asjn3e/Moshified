@@ -600,7 +600,7 @@ a {
         color: white;
         font-weight: 500;
         font-size: 1.8rem;
-        line-height: 2rem;
+        line-height: 3.4rem;
     }
     .callout .grid--1x2{
         grid-template-columns: 1fr 0.3fr;
