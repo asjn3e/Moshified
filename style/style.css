@@ -1276,3 +1276,99 @@ a {
        
    }
  }
+
+ /* footer */
+
+ .footer{
+     background-color: #232323;
+     padding: 2rem;
+     padding-top: 15rem;
+ }
+ .footer .container{
+     margin: 0;
+     
+     display: grid;
+     grid-template-columns: 1fr;
+ }
+ .footer .collapsible__heading{
+     align-items: center;
+ }
+ .footer h2{
+     text-transform: uppercase;
+     color: white;
+     font-size: 3rem;
+     margin-bottom: 0;
+     font-weight: 700;
+ }
+ .footer__item{
+     color: #919191;
+    padding: 1rem;
+    font-size: 2.4rem;
+    font-weight:400 ;
+ }
+ .footer__list li , .footer__list a ,.footer__list ul{
+    max-height: 0;
+    opacity: 0;
+    transition: all .5s;
+ }
+ .collapsible--expanded .footer__list li , .collapsible--expanded  .footer__list a ,.collapsible--expanded .footer__list ul{
+    max-height: 100vh;
+    display: block;
+    opacity: 1;
+    transition: all .5s;
+ }
+ .footer__collapsible{
+    border-bottom:2px #393939 solid;
+ }
+ .footer__copy-right{
+     margin: 5rem;
+     text-align: center;
+ }
+ .footer__copy-right >img{
+     width: 100%;
+ }
+ .footer__copy-right > p{
+    font-size:2.1rem;
+}
+@media screen and (min-width:768px) {
+    .footer .container{
+        grid-template-columns: repeat(5 , 1fr);
+        margin: auto;
+        grid-column-gap: 5rem;
+    }
+    .footer .icon-container ,.footer .icon{
+        display: none;
+    }
+    .footer h2{
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+    .footer__item{
+       padding: 1rem 0; 
+       font-size: 1.5rem;
+    }
+    .footer__item:hover{
+        color: white;
+     }
+    .footer__list , .footer__list li , .footer__list a ,.footer__list ul{
+        max-height: 100vh;
+        opacity: 1;
+        display: block;
+        
+     }
+     .footer__collapsible{
+        border-bottom:none;
+     }
+     .footer__copy-right{
+        margin: 0;
+        text-align: center;
+        order: -1;
+    }
+    .footer__copy-right >img{
+       transform: translateY(-.9rem);
+    }
+    .footer__copy-right > p{
+        font-size:1.5rem;
+        margin-top: 1.5rem;
+    }
+}
