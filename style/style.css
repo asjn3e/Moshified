@@ -1108,4 +1108,94 @@ a {
     .feature:nth-child(even) .block{
         order: 2;
     }
+} 
+
+
+/* panel */
+
+.control-panel{
+    background-image: url(../images/blue-dots.png);
+    background-repeat: repeat;
+    background-size: 700px;
+    clip-path: polygon(100% 0%, 0 0, 0 95%, 100% 100%);
 }
+.control-panel__grid{
+    grid-gap: 3rem 5rem;
+    margin-top: 3rem;
+}
+
+.control-panel__grid .media__part{
+    margin-top: 2rem;
+}
+.control-panel__grid .media__part .media{
+    margin-bottom: 4rem;
+}
+
+
+.control-panel h2 {
+    color: #fff;
+}
+.control-panel h3{
+    color: #fff;
+}
+
+.control-panel p{
+    color: #7b858b;
+}
+
+.panel__image{
+    width: 100%;
+    margin-top: 1rem;
+}
+@media screen and (min-width:320px) {
+    .control-panel h2 {
+        font-size: 2rem;
+    }
+    .media__part .media .media__title{
+        font-size: 1.7rem;
+    }
+    .media__part .media .media__body p{
+        font-size: 1.2rem;
+    }
+ }
+@media screen and (min-width:360px) {
+    .control-panel h2 {
+        font-size: 2.3rem;
+    }
+    .media__part .media .media__title{
+        font-size: 2rem;
+    }
+    .media__part .media .media__body p{
+        font-size: 1.2rem;
+    }
+ }
+@media screen  and (min-width:768px){
+    .control-panel{
+        background-image: url(../images/blue-dots.png);
+        background-repeat: repeat;
+        background-size: 700px;
+        clip-path: polygon(100% 0%, 0 0, 0 80%, 100% 100%);
+
+     }
+     .panel__image{
+        width: 100%;
+        margin-top: rem;
+    }
+    .control-panel h2 {
+        font-size: 4rem;
+    }
+    .media__part .media .media__title{
+        font-size: 2.3rem;
+    }
+    .media__part .media .media__body p{
+        font-size: 1.4rem;
+    }
+ } 
+@media screen and (min-width:1024px) {
+     .control-panel{
+        background-image: url(../images/blue-dots.png);
+        background-repeat: repeat;
+        background-size: 900px;
+        clip-path: polygon(100% 0%, 0 0, 0 85%, 100% 100%);
+     }
+ }
