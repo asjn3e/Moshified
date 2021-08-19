@@ -6,20 +6,93 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Deploy your website in less than 60 seconds">
-  <meta property="og:title" content="Moshify... "> 
-  <meta property="og:description" content="Moshify... "> 
-  <meta property="og:type" content="website"> 
+  <meta property="og:title" content="Moshify... ">
+  <meta property="og:description" content="Moshify... ">
+  <meta property="og:type" content="website">
   <meta property="og:image" content="https://">
-  <meta property="og:url" content="Moshify... ">  
+  <meta property="og:url" content="Moshify... ">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style/style.css">
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-  <title>Moshified -  GO inline just for 9$</title>
+  <title>Moshified - GO inline just for 9$</title>
+  <style>
+    .loadin-container {
+      display: flex;
+      position: fixed;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      min-width: 100vw;
+      background: #001d30;
+      z-index: 999;
+      animation: changeBg 5s linear infinite;
+      /*remove this line (line number 12) if you don't want to change color as it rotates*/
+    }
+    .go-up{
+      height: 0;
+      transition:height .4s ;
 
+    }
+    @keyframes changeBg {
+      to {
+        filter: hue-rotate(360deg);
+      }
+    }
+
+    /*remove this part (@keyframe changeBg) if you don't want to change color as it rotates*/
+    .loader {
+      position: absolute;
+      width: 150px;
+      height: 150px;
+      background: linear-gradient(to top, #001d30 40%, #51eeee);
+      border-radius: 50%;
+      animation: rotate 2s linear infinite;
+    }
+    .go-up .loader{
+      opacity: 0;
+      transition: opacity .4s;
+    }
+    @keyframes rotate {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    .loader::before {
+      content: "";
+      position: absolute;
+      background: #001d30;
+      inset: 20px 20px 0 0;
+      border-radius: 50%;
+    }
+
+    .loader::after {
+      content: "";
+      position: absolute;
+      top: 50px;
+      width: 40px;
+      height: 40px;
+      background: #51eeee;
+      border-radius: 50%;
+      right: -8px;
+      box-shadow: 0 0 5px #51eeee, 0 0 25px #51eeee, 0 0 50px #51eeee,
+        0 0 75 px #51eeee;
+    }
+  </style>
 </head>
+
+
+<body onload="killLoader()">
+<!-- loading  -->
+<section id="loader-container" class="loadin-container">
+  <div class="loader">
+
+  </div>
+</section>
+
 
 <nav class="nav collapsible">
   <img src="images/logo.svg" class="nav__logo" alt="">
@@ -52,7 +125,7 @@
       <button class="btn btn--acente  hero__btn">Get STARTED</button>
     </div>
     <div class="hero__image">
-      <picture >
+      <picture>
         <!-- <source 
         type="image/webp" 
         srcset="images/resized/main-banner@1x.webp 1x,images/resized/main-banner@2x.webp 2x" />
@@ -101,7 +174,7 @@
 
 
 <!-- plans -->
-<section   data-aos="fade-up" class="plans container">
+<section data-aos="fade-up" class="plans container">
 
   <div class="grid grid--1x3">
 
@@ -432,16 +505,16 @@
 
   <!-- callout -->
   <div class="callout callout--primary">
-  <div class="grid grid--1x2">
-    <div class="callout__content">
-      <h2>Ready To Get Started ?</h2>
-      <p>Choose the hosting provider that helps 
-        you start easy, build fast, and grow strong! It’s risk-free with our 14-day money back guarantee.</p>
+    <div class="grid grid--1x2">
+      <div class="callout__content">
+        <h2>Ready To Get Started ?</h2>
+        <p>Choose the hosting provider that helps
+          you start easy, build fast, and grow strong! It’s risk-free with our 14-day money back guarantee.</p>
+      </div>
+      <a href="" class="btn btn--secondary  callout__btn ">Get Started</a>
     </div>
-    <a href="" class="btn btn--secondary  callout__btn ">Get Started</a>
   </div>
-</div> 
-<!-- footer start part -->
+  <!-- footer start part -->
   <div class="container">
 
     <div class="collapsible collapsible--expanded footer__collapsible">
@@ -540,6 +613,12 @@
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
   AOS.init();
+</script>
+<script>
+  function killLoader(){
+   const loaderContainer = document.querySelector('#loader-container');
+  loaderContainer.classList.toggle('go-up')
+  }
 </script>
 </body>
 
