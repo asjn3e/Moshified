@@ -616,8 +616,11 @@
 </script>
 <script>
   function killLoader(){
-   const loaderContainer = document.querySelector('#loader-container');
-  loaderContainer.classList.toggle('go-up')
+    const showLoader=setInterval(()=>{
+      const loaderContainer = document.querySelector('#loader-container');
+   loaderContainer.classList.toggle('go-up')
+   clearInterval(showLoader)
+    },1000)
   }
 </script>
 </body>
