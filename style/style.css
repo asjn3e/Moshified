@@ -26,7 +26,7 @@
 
 html {
     font-size: 62.5%;
-
+    overflow-x:hidden ;
 }
 
 body {
@@ -35,6 +35,8 @@ body {
     color: var(--color-body);
     font-size: 2.4rem;
     line-height: 1.5;
+    overflow-x: hidden;
+
 }
 
 input,
